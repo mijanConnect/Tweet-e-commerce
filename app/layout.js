@@ -1,14 +1,30 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
+import { ConfigProvider } from "antd";
+import { Lobster_Two, Poppins, Rancho } from "next/font/google";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./globals.css";
+import theme from "./theme/themeConfig";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lobsterTwo = Lobster_Two({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-lobster-two",
+  display: "swap",
+});
+
+const rancho = Rancho({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-rancho",
+  display: "swap",
 });
 
 export const metadata = {
@@ -18,9 +34,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html
+      lang="en"
+      className={`${poppins.variable} ${lobsterTwo.variable} ${rancho.variable}`}
+    >
+      <body>
+        <ConfigProvider theme={theme}>
+          <AntdRegistry>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </AntdRegistry>
+        </ConfigProvider>
       </body>
     </html>
   );
