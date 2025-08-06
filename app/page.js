@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import PopularCategory from "./components/PopularCategory";
 import PopularFood from "./components/PopularFood";
 import PopularRestaurent from "./components/PopularRestaurent";
+import TestimonialSection from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <PopularCategory />
         <PopularFood />
         <PopularRestaurent />
+        <TestimonialSection />
       </main>
     </>
   );
