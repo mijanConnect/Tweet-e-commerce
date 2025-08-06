@@ -23,7 +23,6 @@ export default function ProfilePage() {
             <h3 className="sidebar-profile-name">Mark Jecno</h3>
             <p className="sidebar-profile-gmail">mark-jecno@gmail.com</p>
           </div>
-
           <ProfileSidebar />
         </Sider>
         <Layout className="profile-content-layout">

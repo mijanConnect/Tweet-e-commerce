@@ -40,8 +40,7 @@ export default function RootLayout({ children }) {
       <body>
         <ConfigProvider theme={theme}>
           <AntdRegistry>
-            {/* <Header /> */}
-            <main>{children}</main>
+            {children}
             <FooterDesign />
           </AntdRegistry>
         </ConfigProvider>

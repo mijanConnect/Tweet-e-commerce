@@ -8,10 +8,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <PopularCategory />
-      <PopularFood />
-      <PopularRestaurent />
+      <main>
+        <Hero />
+        <PopularCategory />
+        <PopularFood />
+        <PopularRestaurent />
+      </main>
     </>
   );
 }
