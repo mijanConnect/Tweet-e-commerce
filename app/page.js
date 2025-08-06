@@ -1,3 +1,4 @@
+import Download from "./components/Download";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import PopularCategory from "./components/PopularCategory";
@@ -14,6 +15,7 @@ export default function Home() {
         <PopularCategory />
         <PopularFood />
         <PopularRestaurent />
+        <Download />
         <TestimonialSection />
       </main>
     </>

@@ -354,6 +354,28 @@ body {
   padding: 70px 0;
 }
 
+.slider-custom-padding {
+  padding: 50px 0;
+}
+
+.custom-arrow-right {
+  position: absolute;
+}
+
+.custom-arrow-left {
+  rotate: 180deg;
+  position: absolute;
+  margin: 0 0 0 -40px;
+}
+
+.slick-slide {
+  padding-top: 10px !important;
+}
+
+.slick-list {
+  padding: 20px 5px !important;
+}
+
 .category-items {
   display: flex;
   flex-wrap: wrap;
@@ -433,7 +455,7 @@ body {
 /* Card */
 .custom-card {
   max-width: 282px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05); /* stronger shadow */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease;
 }
 
@@ -873,4 +895,69 @@ body {
 .testimonial-dish {
   max-width: 100%;
   height: auto;
+}
+
+/* Count */
+.count-wrapper {
+  text-align: center;
+}
+
+.count-heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  line-height: 1.5;
+}
+
+.count-paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+}
+
+/* Download */
+.download-background {
+  position: relative;
+  margin-top: 414px;
+  margin-bottom: 100px;
+}
+
+.download-responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.download-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+}
+
+.download-cover {
+  padding: 0 36px 66px 0;
+}
+
+.download-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5c5c5c;
+  margin: 24px 0;
+}
+
+.download-link {
+  display: flex;
+  gap: 11px;
+}
+
+.count-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 29px;
+  margin-top: 114px;
+  margin-left: 50px;
 }

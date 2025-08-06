@@ -1,6 +1,8 @@
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
 import { Lobster_Two, Poppins, Rancho } from "next/font/google";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import FooterDesign from "./components/Footer";
 import "./globals.css";
 import theme from "./theme/themeConfig";

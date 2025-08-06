@@ -1,24 +1,100 @@
+"use client";
+
+import Image from "next/image";
+import Slider from "react-slick";
 import FoodCard from "./FoodCard";
 import Heading from "./Heading";
 
+// Custom Arrows
+function NextArrow({ onClick }) {
+  return (
+    <div
+      onClick={onClick}
+      style={{
+        right: -25,
+        zIndex: 1,
+        position: "absolute",
+        top: "40%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+      }}
+    >
+      <Image
+        src="/images/category/arrow-right.png"
+        alt="Next"
+        width={48}
+        height={48}
+        className="custom-arrow-right"
+      />
+    </div>
+  );
+}
+
+function PrevArrow({ onClick }) {
+  return (
+    <div
+      onClick={onClick}
+      style={{
+        left: -25,
+        zIndex: 1,
+        position: "absolute",
+        top: "40%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+      }}
+    >
+      <Image
+        src="/images/category/arrow-right.png"
+        alt="Previous"
+        width={48}
+        height={48}
+        className="custom-arrow-left"
+      />
+    </div>
+  );
+}
+
+// Slider Settings
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
+  responsive: [
+    { breakpoint: 1200, settings: { slidesToShow: 3 } },
+    { breakpoint: 992, settings: { slidesToShow: 2 } },
+    { breakpoint: 576, settings: { slidesToShow: 1 } },
+  ],
+};
+
 export default function PopularFood() {
   return (
-    <>
-      <div className="container">
-        <div className="popular-food">
-          <Heading
-            hehadingTitle="Popular Food"
-            headingMainBlack="Popular"
-            headingMainColor="Food Near Me"
-          />
-          <div className="popular-food-items">
+    <div className="container">
+      <div className="popular-food">
+        <Heading
+          hehadingTitle="Popular Food"
+          headingMainBlack="Popular"
+          headingMainColor="Food Near Me"
+        />
+        <Slider {...settings} className="slider-custom-padding">
+          <div style={{ padding: 8 }}>
             <FoodCard image="/images/food/popular-food-1.png" />
+          </div>
+          <div style={{ padding: 8 }}>
             <FoodCard image="/images/food/popular-food-2.png" />
+          </div>
+          <div style={{ padding: 8 }}>
             <FoodCard image="/images/food/popular-food-3.png" />
+          </div>
+          <div style={{ padding: 8 }}>
             <FoodCard image="/images/food/popular-food-4.png" />
           </div>
-        </div>
+        </Slider>
       </div>
-    </>
+    </div>
   );
 }
