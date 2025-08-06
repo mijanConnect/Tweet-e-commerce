@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Topbar from "./Topbar";
 
 export default function Header() {
@@ -6,12 +7,12 @@ export default function Header() {
       <Topbar />
       <nav className="navbar">
         <div className="container header">
-          <a href="#">
+          <Link href="/">
             <img src="/images/header/logo.png" alt="logo" />
-          </a>
-          <a href="#">
-            <img src="/images/header/profile.png" alt="logo" />
-          </a>
+          </Link>
+          <Link href="/profile">
+            <img src="/images/header/profile.png" alt="profile" />
+          </Link>
         </div>
       </nav>
     </div>

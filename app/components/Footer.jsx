@@ -1,18 +1,18 @@
 "use client";
 
-import { FacebookFilled } from "@ant-design/icons";
-import { Button, Col, Input, Row, Space } from "antd";
+import { Button, Col, Input, Layout, Row, Space } from "antd";
 import Copyright from "./Comyright";
+const { Footer } = Layout;
 const { Search } = Input;
 
 const baseStyle = {
   width: "25%",
 };
 
-export default function Footer() {
+export default function FooterDesign() {
   return (
     <>
-      <footer>
+      <Footer>
         <div className="footer">
           <div className="container">
             <Row gutter={[52, 16]} wrap>
@@ -105,7 +105,7 @@ export default function Footer() {
             </Row>
           </div>
         </div>
-      </footer>
+      </Footer>
       <Copyright />
     </>
   );
