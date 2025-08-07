@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Topbar from "./Topbar";
 
@@ -8,10 +9,20 @@ export default function Header() {
       <nav className="navbar">
         <div className="container header">
           <Link href="/">
-            <img src="/images/header/logo.png" alt="logo" />
+            <Image
+              src="/images/header/logo.png"
+              alt="Logo"
+              width={102}
+              height={56}
+            />
           </Link>
           <Link href="/profile">
-            <img src="/images/header/profile.png" alt="profile" />
+            <Image
+              src="/images/header/profile.png"
+              alt="Profile"
+              width={65}
+              height={65}
+            />
           </Link>
         </div>
       </nav>

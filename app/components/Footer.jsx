@@ -1,6 +1,8 @@
 "use client";
 
 import { Button, Col, Input, Layout, Row, Space } from "antd";
+import Image from "next/image";
+import Link from "next/link";
 import Copyright from "./Comyright";
 const { Footer } = Layout;
 const { Search } = Input;
@@ -18,26 +20,26 @@ export default function FooterDesign() {
               <Col xs={24} sm={24} md={12} lg={{ flex: "0 0 30%" }}>
                 <div className="box">
                   <div className="footer-item-left">
-                    <a href="#">
+                    <Link href="#">
                       <img src="/images/footer/logo.png" alt="logo" />
-                    </a>
+                    </Link>
                     <p className="footer-item-left-text">
                       Your go-to choice for fast and fresh delivery, bringing
                       the best to your door in no time
                     </p>
                     <div className="footer-social-links">
-                      <a href="#" className="footer-social-link">
+                      <Link href="#" className="footer-social-link">
                         <img src="/images/footer/facebook.png" alt="icon" />
-                      </a>
-                      <a href="#" className="footer-social-link">
+                      </Link>
+                      <Link href="#" className="footer-social-link">
                         <img src="/images/footer/twitter.png" alt="icon" />
-                      </a>
-                      <a href="#" className="footer-social-link">
+                      </Link>
+                      <Link href="#" className="footer-social-link">
                         <img src="/images/footer/linkedin.png" alt="icon" />
-                      </a>
-                      <a href="#" className="footer-social-link">
+                      </Link>
+                      <Link href="#" className="footer-social-link">
                         <img src="/images/footer/whatsapp.png" alt="icon" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -48,13 +50,13 @@ export default function FooterDesign() {
                     <h2>Quick Link</h2>
                     <ul>
                       <li>
-                        <a href="#">About Us</a>
+                        <Link href="#">About Us</Link>
                       </li>
                       <li>
-                        <a href="#">How We Work</a>
+                        <Link href="#">How We Work</Link>
                       </li>
                       <li>
-                        <a href="#">Career</a>
+                        <Link href="#">Career</Link>
                       </li>
                     </ul>
                   </div>
@@ -66,13 +68,13 @@ export default function FooterDesign() {
                     <h2>Quick Link</h2>
                     <ul>
                       <li>
-                        <a href="#">Privacy Policies</a>
+                        <Link href="#">Privacy Policies</Link>
                       </li>
                       <li>
-                        <a href="#">Terms & Conditions</a>
+                        <Link href="#">Terms & Conditions</Link>
                       </li>
                       <li>
-                        <a href="#">Faq</a>
+                        <Link href="#">Faq</Link>
                       </li>
                     </ul>
                   </div>
@@ -92,7 +94,12 @@ export default function FooterDesign() {
                         className="custom-input"
                       />
                       <Button type="primary" className="custom-input-button">
-                        <img src="/images/footer/mail.png" alt="icon" />
+                        <Image
+                          src="/images/footer/mail.png"
+                          alt="icon"
+                          width={16}
+                          height={16}
+                        />
                       </Button>
                     </Space.Compact>
                   </div>

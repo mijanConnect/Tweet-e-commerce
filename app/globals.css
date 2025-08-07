@@ -164,6 +164,16 @@ body {
   margin-bottom: 24px;
 }
 
+@media (max-width: 992px) {
+  .hero-heading-one {
+    font-size: 70px;
+  }
+
+  .hero-heading-two {
+    font-size: 50px;
+  }
+}
+
 .hero-paragraph {
   font-size: 18px;
   font-weight: 400;

@@ -53,7 +53,6 @@ function PrevArrow({ onClick }) {
   );
 }
 
-// Slider Settings
 const settings = {
   dots: false,
   infinite: true,

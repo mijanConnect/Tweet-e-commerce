@@ -2,6 +2,7 @@
 
 import { Input } from "antd";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -40,7 +41,7 @@ export default function Hero() {
                 className="download-responsive-image-hero"
               />
               <div className="hero-cards">
-                <a href="">
+                <Link href="">
                   <Image
                     src="/images/hero/card-1.png"
                     alt="Hero"
@@ -48,8 +49,8 @@ export default function Hero() {
                     height={150}
                     className="card-img-1"
                   />
-                </a>
-                <a href="#">
+                </Link>
+                <Link href="#">
                   <Image
                     src="/images/hero/card-2.png"
                     alt="Hero"
@@ -57,8 +58,8 @@ export default function Hero() {
                     height={83}
                     className="card-img-2"
                   />
-                </a>
-                <a href="#">
+                </Link>
+                <Link href="#">
                   <Image
                     src="/images/hero/card-3.png"
                     alt="Hero"
@@ -66,7 +67,7 @@ export default function Hero() {
                     height={140}
                     className="card-img-3"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
