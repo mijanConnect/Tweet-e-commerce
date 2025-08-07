@@ -37,34 +37,37 @@ export default function Hero() {
                 alt="Hero"
                 width={590}
                 height={533}
+                className="download-responsive-image-hero"
               />
-              <a href="">
-                <Image
-                  src="/images/hero/card-1.png"
-                  alt="Hero"
-                  width={194}
-                  height={150}
-                  className="card-img-1"
-                />
-              </a>
-              <a href="#">
-                <Image
-                  src="/images/hero/card-2.png"
-                  alt="Hero"
-                  width={161}
-                  height={83}
-                  className="card-img-2"
-                />
-              </a>
-              <a href="#">
-                <Image
-                  src="/images/hero/card-3.png"
-                  alt="Hero"
-                  width={322}
-                  height={140}
-                  className="card-img-3"
-                />
-              </a>
+              <div className="hero-cards">
+                <a href="">
+                  <Image
+                    src="/images/hero/card-1.png"
+                    alt="Hero"
+                    width={194}
+                    height={150}
+                    className="card-img-1"
+                  />
+                </a>
+                <a href="#">
+                  <Image
+                    src="/images/hero/card-2.png"
+                    alt="Hero"
+                    width={161}
+                    height={83}
+                    className="card-img-2"
+                  />
+                </a>
+                <a href="#">
+                  <Image
+                    src="/images/hero/card-3.png"
+                    alt="Hero"
+                    width={322}
+                    height={140}
+                    className="card-img-3"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>

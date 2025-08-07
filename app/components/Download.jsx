@@ -10,7 +10,7 @@ export default function Download() {
         <div className="download-background">
           <Image
             src="/images/download/background.png"
-            alt="play store"
+            alt="Background"
             width={1200}
             height={298}
             className="download-responsive-image"

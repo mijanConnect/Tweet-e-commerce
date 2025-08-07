@@ -277,6 +277,58 @@ body {
   position: relative;
 }
 
+/* test */
+@media (max-width: 1020px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-section .hero-image {
+    flex: unset;
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero-section .hero-image {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .download-responsive-image-hero {
+    height: auto;
+    width: 100%;
+    max-width: 590px;
+  }
+
+  .card-img-1,
+  .card-img-2,
+  .card-img-3 {
+    position: static;
+    display: inline-block;
+    margin: 10px 5px 0;
+  }
+
+  .search-background {
+    background-color: unset;
+  }
+}
+
+@media (max-width: 1020px) {
+  .hero-cards {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}
+
+/* text end */
+
 .card-img-1 {
   position: absolute;
   top: 0;
