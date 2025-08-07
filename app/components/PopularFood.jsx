@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import FoodCard from "./FoodCard";
 import Heading from "./Heading";
 
-// Custom Arrows
 function NextArrow({ onClick }) {
   return (
     <div

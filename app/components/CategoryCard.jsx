@@ -1,9 +1,7 @@
 "use client";
 
 import { Card } from "antd";
-
 const { Meta } = Card;
-
 const categories = [
   {
     key: 1,

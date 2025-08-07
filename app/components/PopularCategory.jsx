@@ -4,9 +4,7 @@ import { Card } from "antd";
 import Image from "next/image";
 import Slider from "react-slick";
 import Heading from "./Heading";
-
 const { Meta } = Card;
-
 const categories = [
   {
     key: 1,

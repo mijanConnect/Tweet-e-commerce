@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import Heading from "./Heading";
 import RestaurentCard from "./RestaurentCard";
 
-// Custom Arrows
 function NextArrow({ onClick }) {
   return (
     <div
@@ -54,7 +53,6 @@ function PrevArrow({ onClick }) {
   );
 }
 
-// Slider settings
 const settings = {
   dots: false,
   infinite: true,

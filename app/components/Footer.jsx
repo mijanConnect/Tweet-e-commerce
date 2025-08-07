@@ -4,7 +4,6 @@ import { Button, Col, Input, Layout, Row, Space } from "antd";
 import Copyright from "./Comyright";
 const { Footer } = Layout;
 const { Search } = Input;
-
 const baseStyle = {
   width: "25%",
 };
@@ -43,7 +42,6 @@ export default function FooterDesign() {
                   </div>
                 </div>
               </Col>
-
               <Col xs={24} sm={24} md={12} lg={{ flex: "0 0 20%" }}>
                 <div className="box">
                   <div>
@@ -62,7 +60,6 @@ export default function FooterDesign() {
                   </div>
                 </div>
               </Col>
-
               <Col xs={24} sm={24} md={12} lg={{ flex: "0 0 20%" }}>
                 <div className="box">
                   <div>
@@ -81,7 +78,6 @@ export default function FooterDesign() {
                   </div>
                 </div>
               </Col>
-
               <Col xs={24} sm={24} md={12} lg={{ flex: "0 0 30%" }}>
                 <div className="box">
                   {" "}

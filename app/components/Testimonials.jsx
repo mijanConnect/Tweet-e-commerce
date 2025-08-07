@@ -3,7 +3,6 @@
 import { Avatar, Card, Rate, Typography } from "antd";
 import Image from "next/image";
 import Heading from "./Heading";
-
 const { Title, Paragraph } = Typography;
 
 export default function TestimonialSection({

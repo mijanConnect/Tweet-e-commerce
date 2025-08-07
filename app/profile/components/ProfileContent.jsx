@@ -40,7 +40,6 @@ export default function ProfileContent() {
                 <Input className="form-input-write" />
               </Form.Item>
             </div>
-
             <div className="form-input">
               <Form.Item
                 label={
@@ -56,7 +55,6 @@ export default function ProfileContent() {
                 <Input className="form-input-write" />
               </Form.Item>
             </div>
-
             <div className="form-input">
               <Form.Item
                 label={
@@ -73,7 +71,6 @@ export default function ProfileContent() {
               </Form.Item>
             </div>
           </div>
-
           <div className="button-align">
             <Button
               type="primary"
@@ -85,7 +82,6 @@ export default function ProfileContent() {
           </div>
         </Form>
       </Card>
-
       <Card className="form-card">
         <Form layout="vertical" className="tweet-form">
           <div className="form-item-container">
@@ -109,7 +105,6 @@ export default function ProfileContent() {
                 />
               </Form.Item>
             </div>
-
             <div className="form-input">
               <Form.Item
                 label={
@@ -129,7 +124,6 @@ export default function ProfileContent() {
                 />
               </Form.Item>
             </div>
-
             <div className="form-input">
               <Form.Item
                 label={
@@ -150,7 +144,6 @@ export default function ProfileContent() {
               </Form.Item>
             </div>
           </div>
-
           <div className="button-align">
             <Button
               type="primary"
