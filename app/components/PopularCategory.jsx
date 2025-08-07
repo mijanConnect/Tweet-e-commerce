@@ -69,7 +69,7 @@ function NextArrow({ onClick }) {
     <div
       onClick={onClick}
       style={{
-        right: -25,
+        right: -18,
         zIndex: 1,
         position: "absolute",
         top: "40%",
@@ -122,43 +122,51 @@ export default function PopularCategory() {
     slidesToShow: 7,
     slidesToScroll: 1,
     arrows: true,
+    draggable: true,
+    swipe: true,
+    touchMove: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       { breakpoint: 1300, settings: { slidesToShow: 6 } },
-      { breakpoint: 1200, settings: { slidesToShow: 5 } },
-      { breakpoint: 992, settings: { slidesToShow: 4 } },
-      { breakpoint: 768, settings: { slidesToShow: 3 } },
-      { breakpoint: 576, settings: { slidesToShow: 2 } },
+      { breakpoint: 1200, settings: { arrows: false, slidesToShow: 5 } },
+      { breakpoint: 1150, settings: { arrows: false, slidesToShow: 5 } },
+      { breakpoint: 992, settings: { arrows: false, slidesToShow: 4 } },
+      { breakpoint: 768, settings: { arrows: false, slidesToShow: 3 } },
+      { breakpoint: 576, settings: { arrows: false, slidesToShow: 2 } },
     ],
   };
 
   return (
     <div className="container">
-      <Heading
-        hehadingTitle="Category"
-        headingMainBlack="Popular"
-        headingMainColor="Category"
-      />
-      <Slider {...settings} className="slider-custom-padding">
-        {categories.map(({ key, title, img, color }) => (
-          <div key={key} style={{ padding: 8 }}>
-            <Card
-              hoverable
-              style={{
-                width: 150,
-                textAlign: "center",
-                backgroundColor: color,
-                margin: "0 auto",
-              }}
-              cover={<img alt={title} src={img} style={{ marginTop: -10 }} />}
-              onClick={() => console.log(`Clicked on ${title}`)}
-            >
-              <Meta title={<div className="category-item-text">{title}</div>} />
-            </Card>
-          </div>
-        ))}
-      </Slider>
+      <div className="popular-category">
+        <Heading
+          hehadingTitle="Category"
+          headingMainBlack="Popular"
+          headingMainColor="Category"
+        />
+        <Slider {...settings} className="slider-custom-padding">
+          {categories.map(({ key, title, img, color }) => (
+            <div key={key} style={{ padding: 8 }}>
+              <Card
+                hoverable
+                style={{
+                  width: 150,
+                  textAlign: "center",
+                  backgroundColor: color,
+                  margin: "0 auto",
+                }}
+                cover={<img alt={title} src={img} style={{ marginTop: -10 }} />}
+                onClick={() => console.log(`Clicked on ${title}`)}
+              >
+                <Meta
+                  title={<div className="category-item-text">{title}</div>}
+                />
+              </Card>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

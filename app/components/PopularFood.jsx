@@ -11,7 +11,7 @@ function NextArrow({ onClick }) {
     <div
       onClick={onClick}
       style={{
-        right: -25,
+        right: -18,
         zIndex: 1,
         position: "absolute",
         top: "40%",
@@ -62,12 +62,34 @@ const settings = {
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
+  centerMode: false,
+  centerPadding: "0px",
+  draggable: true,
+  swipe: true,
+  touchMove: true,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
   responsive: [
-    { breakpoint: 1200, settings: { slidesToShow: 3 } },
-    { breakpoint: 992, settings: { slidesToShow: 2 } },
-    { breakpoint: 576, settings: { slidesToShow: 1 } },
+    {
+      breakpoint: 1200,
+      settings: { slidesToShow: 3 },
+    },
+    {
+      breakpoint: 1150,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: "0px",
+        arrows: false,
+      },
+    },
   ],
 };
 
@@ -81,16 +103,16 @@ export default function PopularFood() {
           headingMainColor="Food Near Me"
         />
         <Slider {...settings} className="slider-custom-padding">
-          <div style={{ padding: 8 }}>
+          <div style={{ padding: "0 12px" }}>
             <FoodCard image="/images/food/popular-food-1.png" />
           </div>
-          <div style={{ padding: 8 }}>
+          <div style={{ padding: "0 12px" }}>
             <FoodCard image="/images/food/popular-food-2.png" />
           </div>
-          <div style={{ padding: 8 }}>
+          <div style={{ padding: "0 12px" }}>
             <FoodCard image="/images/food/popular-food-3.png" />
           </div>
-          <div style={{ padding: 8 }}>
+          <div style={{ padding: "0 12px" }}>
             <FoodCard image="/images/food/popular-food-4.png" />
           </div>
         </Slider>

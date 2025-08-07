@@ -113,6 +113,7 @@ body {
   color: #333333;
   font-size: 40px;
   font-weight: 600;
+  max-width: 650px;
 }
 
 .heading-main span {
@@ -410,6 +411,16 @@ body {
   padding: 50px 0;
 }
 
+@media (max-width: 992px) {
+  .popular-category {
+    padding: 30px 0;
+  }
+
+  .slider-custom-padding {
+    padding: 0px 0;
+  }
+}
+
 .custom-arrow-right {
   position: absolute;
 }
@@ -425,7 +436,7 @@ body {
 }
 
 .slick-list {
-  padding: 20px 5px !important;
+  padding: 20px 0 !important;
 }
 
 .category-items {
@@ -680,6 +691,16 @@ body {
   padding: 75px 0;
 }
 
+@media (max-width: 992px) {
+  .popular-food {
+    padding: 30px 0;
+  }
+
+  .slider-custom-padding {
+    padding: 0;
+  }
+}
+
 .popular-food-items {
   padding: 66px 0;
   display: flex;
@@ -692,7 +713,16 @@ body {
   padding: 75px 0;
 }
 
-/* Popular Restaurent Card */
+@media (max-width: 992px) {
+  .popular-restaurent {
+    padding: 30px 0;
+  }
+
+  .restaurent-slider {
+    padding: 0 0 50px 0 !important;
+  }
+}
+
 .restaurent-details {
   display: flex;
   flex-direction: column;
@@ -972,6 +1002,51 @@ body {
   height: auto;
 }
 
+@media (max-width: 992px) {
+  .testimonial-container {
+    flex-direction: column-reverse;
+    align-items: left;
+    text-align: left;
+  }
+
+  .testimonial-left,
+  .testimonial-right {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    margin: 2rem auto;
+    max-width: 90%;
+  }
+
+  .testimonial-dish {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .testimonial-footer {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-quote {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-name {
+    font-size: 1rem;
+  }
+
+  .testimonial-role {
+    font-size: 0.85rem;
+  }
+
+  .testimonial-card {
+    padding: 1rem;
+  }
+}
+
 /* Count */
 .count-wrapper {
   text-align: center;
@@ -996,6 +1071,12 @@ body {
   position: relative;
   margin-top: 414px;
   margin-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  .download-background {
+    margin-bottom: 10px;
+  }
 }
 
 .download-responsive-image {
@@ -1137,4 +1218,34 @@ body {
   .count-container {
     gap: 12px;
   }
+}
+
+/*  */
+
+.popular-restaurent-wrapper {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.restaurent-slider {
+  padding: 50px 0;
+}
+
+.slide-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: prevent extra space on small screens */
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+/* Remove side gaps from the carousel container */
+.restaurent-slider .slick-list {
+  margin-left: 0;
+  margin-right: 0;
 }
