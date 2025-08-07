@@ -1,57 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Slider from "react-slick";
 import FoodCard from "./FoodCard";
 import Heading from "./Heading";
-
-function NextArrow({ onClick }) {
-  return (
-    <div
-      onClick={onClick}
-      style={{
-        right: -18,
-        zIndex: 1,
-        position: "absolute",
-        top: "40%",
-        transform: "translateY(-50%)",
-        cursor: "pointer",
-      }}
-    >
-      <Image
-        src="/images/category/arrow-right.png"
-        alt="Next"
-        width={48}
-        height={48}
-        className="custom-arrow-right"
-      />
-    </div>
-  );
-}
-
-function PrevArrow({ onClick }) {
-  return (
-    <div
-      onClick={onClick}
-      style={{
-        left: -25,
-        zIndex: 1,
-        position: "absolute",
-        top: "40%",
-        transform: "translateY(-50%)",
-        cursor: "pointer",
-      }}
-    >
-      <Image
-        src="/images/category/arrow-right.png"
-        alt="Previous"
-        width={48}
-        height={48}
-        className="custom-arrow-left"
-      />
-    </div>
-  );
-}
+import NextArrow from "./NextArrow";
+import PrevArrow from "./PrevArrow";
 
 const settings = {
   dots: false,

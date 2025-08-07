@@ -1,9 +1,11 @@
 "use client";
 
 import { Card } from "antd";
-import Image from "next/image";
 import Slider from "react-slick";
 import Heading from "./Heading";
+import NextArrow from "./NextArrow";
+import PrevArrow from "./PrevArrow";
+
 const { Meta } = Card;
 const categories = [
   {
@@ -61,56 +63,6 @@ const categories = [
     color: "#FD683E",
   },
 ];
-
-function NextArrow({ onClick }) {
-  return (
-    <div
-      onClick={onClick}
-      style={{
-        right: -18,
-        zIndex: 1,
-        position: "absolute",
-        top: "40%",
-        transform: "translateY(-50%)",
-        cursor: "pointer",
-        fontSize: "24px",
-      }}
-    >
-      <Image
-        src="/images/category/arrow-right.png"
-        alt="Hero"
-        width={48}
-        height={48}
-        className="custom-arrow-right"
-      />
-    </div>
-  );
-}
-
-function PrevArrow({ onClick }) {
-  return (
-    <div
-      onClick={onClick}
-      style={{
-        left: -25,
-        zIndex: 1,
-        position: "absolute",
-        top: "40%",
-        transform: "translateY(-50%)",
-        cursor: "pointer",
-        fontSize: "24px",
-      }}
-    >
-      <Image
-        src="/images/category/arrow-right.png"
-        alt="Hero"
-        width={48}
-        height={48}
-        className="custom-arrow-left"
-      />
-    </div>
-  );
-}
 
 export default function PopularCategory() {
   const settings = {

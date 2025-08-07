@@ -47,10 +47,10 @@ export default function Download() {
                 </Link>
               </div>
               <div className="count-container">
-                <Count count="100" title="Food Menu" />
-                <Count count="100" title="Downloads" />
-                <Count count="101" title="Positiv Reviews" />
-                <Count count="101" title="Average Review" />
+                <Count count="100+" title="Food Menu" />
+                <Count count="100+" title="Downloads" />
+                <Count count="20+" title="Positiv Reviews" />
+                <Count count="4.7" title="Average Review" />
               </div>
             </div>
             <div className="download-right">
