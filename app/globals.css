@@ -848,6 +848,29 @@ body {
   line-height: 1.5;
 }
 
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 95px;
+  right: 10px;
+  z-index: 1000;
+  background-color: var(--primary-color) !important;
+  padding: 17px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: white !important;
+}
+
+@media (min-width: 779px) {
+  .sidebar-toggle-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 778px) {
+  .profile-content-wrapper {
+    padding: 16px;
+  }
+}
+
 /* Testimonials */
 .testimonial-container {
   display: flex;
